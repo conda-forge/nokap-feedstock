@@ -1,5 +1,5 @@
 context:
-  version: "0.1.0"
+  version: "0.2.0"
 
 package:
   name: nokap
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/posit-dev/nokap/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 8d79818a12e7f33c370f9d34a240201ebbba40766a6406a3e8b31bfd11bf246a
+  sha256: 55405e85f36166273f656e18ffe2c449474f744993e6a3e721aa673d768bfd77
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script:
     content: python -m pip install . -vv --no-deps --no-build-isolation --no-index --use-deprecated=legacy-certs
     env:
